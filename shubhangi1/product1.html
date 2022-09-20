@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+nav{
+    height: 50px;
+    background: rgb(255, 0, 204);
+    opacity: 0.8;
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px 725px;            /*  Top tool bar */
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}                                         /*Spacing tool bar*/
+nav ul li a{
+    text-decoration: none;
+    color: rgb(9, 8, 8);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    border-radius: 2px;
+    transition: all 0.5s ease;      
+}
+nav ul li a:hover{
+    color: white;
+    background: rgb(0, 94, 255);
+}
+.log{
+    position: absolute;
+    height: auto;
+    left: 0px;
+    width: 49px;
+}
+ input{
+    border: 0;
+  background: none;
+  display: block;
+  margin: 1px auto;
+  text-align: center;
+  border: 4px solid #0062ffec;
+  padding:8px 8px ;
+  width: 220px;
+  outline: none;
+  color: antiquewhite;
+  border-radius: 25px;
+  transition: 0.25px;
+}
+button{
+    
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+
+}
+
+#container{
+    text-align: center;
+    
+}
+</style>
+
+        <title>GOLDBERG PRODUCTS</title>
+
+    </head>
+    <nav>
+        <img src="loh.png" class="log">
+        <ul>
+              <li><a href="index.html">Dashboard</a></li>
+              <li><a href="index2.html">Products</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="product1.html">Products1</a></li>
+          </ul>
+      </nav>   
+      <br></br>
+    <body background="ba2.jpg" text="white">
+
+        <h1 style="text-align:center; color: rgb(0, 0, 255);">GOLDBERG STORE</h1>
+        <br></br>
+        <marquee direction="right">
+    </marquee>
+    </a>
+        <br></br>
+        <h2 style="text-align: center; color: rgb(0, 98, 255);">  ADD NEW PRODUCT TO THE CART   </h2>
+         <div id="form">
+        <p style="text-align: center;">Id:<input type="text" id="id"></p>
+        <p style="text-align: center;">Name:<input type="text" id="name"></p>
+        <p style="text-align: center;">Price:<input type="text" id="price"></p>
+        <div id="container">
+        <button id="add-product">ADD PRODUCT</button>
+    </div>
+    </div>    
+        <br></br>
+
+        <h2 style="text-align:center; color: rgb(255, 0, 191);">    REMOVE THE PRODUCT FROM THE CART   </h2>
+        <p style="text-align:center ;color:wheat;">Enter product ID: <input type="text" id="deletebike"></p>
+        <div id="container">
+       <button id="delete">product removed</button>
+    </div>
+    <br></br>
+       <h2 style="text-align:center; color: rgb(255, 0, 136);">  UPDATE PRODUCT DETAILS IN THE CART </h2>
+       <p style="text-align: center;">Name:<input type="text" id="editname"></p>
+       <p style="text-align: center;">Base ID:<input type="text" id="editid"></p>
+       <div id="container">
+       <button id="update-bike">UPDATE PRODUCT</button>
+    </div>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="product1.js"></script>
+    </body>
+</html>
